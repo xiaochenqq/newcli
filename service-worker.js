@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.ab030bd6c2a7ede28cf18b589ba8054c.js"
+  "precache-manifest.242e51d1f063c05e2108e37aefc1de4f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "studycli"});
