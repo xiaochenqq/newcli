@@ -14,16 +14,16 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.99ef57b59b6abe7ede0c108fd51ba972.js"
+  "precache-manifest.4b0dc8b31e68e3ce306ca537cbdcd641.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "studycli"});
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
+// self.addEventListener('message', (event) => {
+//   if (event.data && event.data.type === 'SKIP_WAITING') {
+//     self.skipWaiting();
+//   }
+// });
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
@@ -31,4 +31,5 @@ self.addEventListener('message', (event) => {
  * See https://goo.gl/S9QRab
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
